@@ -4,5 +4,9 @@ import React from 'react'
 //     return <h1>Hello Vatsal!</h1>
 // }
 
-export const Greet = () => <h1>Hello Vatsal!</h1>
+export const Greet = (props) => 
+{
+    console.log(props);
+    return <h1>Hello {props.name}</h1>
+}
 
