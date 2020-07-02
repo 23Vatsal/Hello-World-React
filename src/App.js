@@ -11,12 +11,12 @@ function App() {
   return (
     <div className="App">
       {/* <Counter/> */}
-      <Message/> 
-      {/* <Greet name="Bruce" heroName="BatMan">
+      {/* <Message/>  */}
+      {/* {<Greet name="Bruce" heroName="BatMan">
         <p>This is children props.</p>
-      </Greet>
-      <Greet name="Tony" heroName="IronMan"/> */}
-      {/* <Welcome/>  */}
+      </Greet> */}
+      {/* <Greet name="Tony" heroName="IronMan"/>  */}
+      <Welcome name="ABCD" heroName="xyz" />
       {/* <Hello/> */}
       
     </div>
