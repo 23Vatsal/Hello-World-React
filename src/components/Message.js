@@ -11,7 +11,7 @@ class Message extends Component{
     changeMessage(){
         this.setState(
             {
-                message:'Thanks for subscribing'
+                message:'Out of Stock :('
             }
         )
     }
@@ -20,7 +20,7 @@ class Message extends Component{
     return (   
         <div>
     <h1>{this.state.message}</h1>
-    <button onClick={() => this.changeMessage()}>Subscribe</button>
+    <button onClick={() => this.changeMessage()}>Buy Now</button>
     </div>
     )
     }
