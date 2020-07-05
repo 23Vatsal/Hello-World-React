@@ -10,11 +10,13 @@ import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
+import WelcomeGreeting from './components/WelcomeGreeting';
 
 function App() {
   return (
     <div className="App">
-      <ParentComponent/>
+      <WelcomeGreeting/>
+      {/* <ParentComponent/> */}
       {/* <EventBind/> */}
       {/* <FunctionClick/>
       <ClassClick/> */}
