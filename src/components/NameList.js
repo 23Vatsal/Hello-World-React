@@ -1,8 +1,9 @@
 import React from 'react'
+import Names from './Names'
 
 function NameList() {
     const names=['Vatsal', 'ABCD','XYZ']
-    const nameList=names.map(name => <h2>{name}</h2>)
+    const nameList=names.map(name => (<Names name={name}></Names>))
     return (
         <div>
             {
