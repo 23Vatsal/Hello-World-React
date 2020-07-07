@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Names({name}) {
+function Names({name,index}) {
     return (
         <div>
-            <h2>{name.name}</h2>
+            <h2 key={index}>{name}</h2>
         </div>
     )
 }
