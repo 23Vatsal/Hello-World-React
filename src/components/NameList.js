@@ -2,8 +2,21 @@ import React from 'react'
 import Names from './Names'
 
 function NameList() {
-    const names=['Vatsal', 'ABCD','XYZ']
-    const nameList=names.map(name => (<Names name={name}></Names>))
+    const names=[
+        {
+            id:1,
+            'name': 'Vatsal'
+        },
+        {
+            id:2,
+            'name': 'XYZ'
+        },
+        {
+            id:3,
+            'name': 'ABCD'
+        }
+    ]
+    const nameList=names.map(name => (<Names key={name.id} name={name}></Names>))
     return (
         <div>
             {
