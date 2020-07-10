@@ -6,7 +6,8 @@ class Form extends Component {
     
         this.state = {
              username: '',
-             comments: ''
+             comments: '',
+             topic: 'react'
         }
     }
 
@@ -23,11 +24,24 @@ class Form extends Component {
             comments : event.target.value
         })
     }
+
+    handleTopic=(event) => {
+        this.setState({
+            topic : event.target.value
+        })
+    }
     
+    handleSubmit=(event)=>{
+        alert(`${this.state.username} ${this.state.comments} ${this.state.topic}`)
+        //this is used to prevent data from being lost when page is reloaded
+        event.preventDefault()
+
+        
+    }
 
     render() {
         return (
-            <form>
+            <form onSubmit={this.handleSubmit}>
             <div>
                 <label>UserName </label>
                 <input type='text' value={this.state.username} onChange={this.handleUsername}></input>
@@ -37,6 +51,15 @@ class Form extends Component {
                 <label>Comments </label>
                 <textarea value={this.state.comments} onChange={this.handleComments}></textarea>
             </div>
+            <div>
+                <label>Topic </label>
+                <select value={this.state.topic} onChange={this.handleTopic}>
+                    <option value="react">React</option>
+                    <option value="angular">Angular</option>
+                    <option value="vue">Vue</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
             </form>
         )
     }
