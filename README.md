@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### `npm-create-react-app`
+
+This package includes the global command for Create React App
+
 ## Available Scripts
 
 In the project directory, you can run:
